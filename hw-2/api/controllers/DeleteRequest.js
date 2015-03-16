@@ -43,7 +43,7 @@ function deletefunct(req,res) {
     if (req.method=='DELETE') {
 
         var headers = JSON.stringify(req.headers);
-        var url_parts = url.parse(req.url,true);
+        var url_parts = require('url').parse(req.url,true);
         var str = JSON.stringify(url_parts.query);
         var str = util.format('Headers: %s ||||| Querries: %s', headers, str);
         // this sends back a JSON response which is a single string

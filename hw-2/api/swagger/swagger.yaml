@@ -92,8 +92,6 @@ definitions:
     properties:
       message:
         type: string
-
-
 /posts:
     # binds a127 app logic to a route
     x-swagger-router-controller: PostRequest
@@ -127,7 +125,6 @@ definitions:
     properties:
       message:
         type: string
-
 /puts:
     # binds a127 app logic to a route
     x-swagger-router-controller: PutRequest
@@ -161,7 +158,6 @@ definitions:
     properties:
       message:
         type: string
-
 /deletes:
     # binds a127 app logic to a route
     x-swagger-router-controller: DeleteRequest
@@ -195,4 +191,5 @@ definitions:
     properties:
       message:
         type: string
+
 
